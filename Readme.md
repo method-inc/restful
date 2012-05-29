@@ -5,12 +5,12 @@
   
 # Installation
 
-  npm install restful
+  npm install restfuljs
   
 # Quick Start
 
   add to express app middleware:
-  app.use(require('restful').response);
+  app.use(require('restfuljs').response);
 
 
 # example uses
