@@ -27,4 +27,4 @@ another mongoose query callback example:
 
 manual call:
   
-  `res.tful(error, response)`
+  `res.tful(error, result)`
