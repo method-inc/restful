@@ -16,16 +16,16 @@
 
 # Example uses
 
-  as direct callback to mongoose query:
+as direct callback to mongoose query:
   
   models.user.findById(id, res.tful);
 
 
-  another mongoose query callback example:
+another mongoose query callback example:
   
   user.save(res.tful);
 
 
-  manual call:
+manual call:
   
   res.tful(error, response)
