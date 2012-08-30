@@ -1,5 +1,5 @@
 {
-  "name": "restfuljs",
+  "name": "restfuljs_app",
   "version": "0.0.1",
   "description": "Easy restful responses for APIs and ajax calls",
   "repository": {
@@ -13,10 +13,9 @@
   "dependencies": {
     "underscore": "latest",
     "async":"latest",
-    "commander":"latest"
-  },
-  "devDependencies": {
-    "vows": "latest"
+    "express":"latest",
+    "restfuljs":"latest",
+    "mongoose":"latest"
   },
   "main": "index",
   "engines": {
