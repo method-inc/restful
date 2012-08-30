@@ -16,6 +16,12 @@ program
   .option('-w, --with [items]', 'the objects to populate the app with', list, ['user'])
   .action(runBuild);
 
+program
+  .command('bootstrap')
+  .description('bootstrap database with data from /bootstrap directory')
+  .option('-m, --models [items]', 'the objects to bootstrap data for (defaults to all)', list, [])
+  .action(runBootstrap);
+
 
 if (process.argv.length < 3) {
   runHelp();
@@ -30,6 +36,10 @@ function list(val) {
 
 function runBuild(options) {
   restfuljs.buildApp(options);
+}
+
+function runBootstrap(options) {
+  restfuljs.bootstrap(options);
 }
 
 function runHelp(options) {
