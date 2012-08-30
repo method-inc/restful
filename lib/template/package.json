@@ -1,0 +1,24 @@
+{
+  "name": "restfuljs_app",
+  "version": "0.0.1",
+  "description": "Easy restful responses for APIs and ajax calls",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/skookum/restful"
+  },
+  "author": {
+    "name": "Jim Snodgrass",
+    "email": "jim@skookum.com"
+  },
+  "dependencies": {
+    "underscore": "latest",
+    "async":"latest",
+    "express":"latest",
+    "restfuljs":"latest",
+    "mongoose":"latest"
+  },
+  "main": "index",
+  "engines": {
+    "node": ">= 0.6.0"
+  }
+}
