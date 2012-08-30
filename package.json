@@ -11,7 +11,9 @@
     "email": "jim@skookum.com"
   },
   "dependencies": {
-    "underscore": "latest"
+    "underscore": "latest",
+    "async":"latest",
+    "commander":"latest"
   },
   "devDependencies": {
     "vows": "latest"

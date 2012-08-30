@@ -1,0 +1,37 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+var restfuljs = require('../');
+var pkg = require('../package.json');
+
+program.name = 'restfuljs';
+
+program
+  .version(pkg.version);
+
+program
+  .command('app')
+  .description('build basic app')
+  .option('-d, --dir [dir]', 'the location to put app', './restfuljsApp')
+  .option('-w, --with [items]', 'the objects to populate the app with', list, ['user'])
+  .action(runBuild);
+
+
+if (process.argv.length < 3) {
+  runHelp();
+}
+else {
+  program.parse(process.argv);
+}
+
+function list(val) {
+  return val.split(',');
+}
+
+function runBuild(options) {
+  restfuljs.buildApp(options);
+}
+
+function runHelp(options) {
+  console.log(program.helpInformation());
+}
