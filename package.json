@@ -1,6 +1,6 @@
 {
   "name": "restfuljs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Easy restful responses for APIs and ajax calls",
   "repository": {
     "type": "git",
