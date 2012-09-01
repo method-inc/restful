@@ -14,6 +14,7 @@ program
   .description('build basic app')
   .option('-d, --dir [dir]', 'the location to put app', './restfuljsApp')
   .option('-w, --with [items]', 'the objects to populate the app with', list, ['user'])
+  .option('-p, --port [number]', 'the port the app should run on', parseInt, 3000)
   .action(runBuild);
 
 program
