@@ -17,6 +17,11 @@ program
   .action(runBuild);
 
 program
+  .command('add [model]')
+  .description('add a resource to an already created restfuljs app')
+  .action(runAdd);
+
+program
   .command('bootstrap')
   .description('bootstrap database with data from /bootstrap directory')
   .option('-m, --models [items]', 'the objects to bootstrap data for (defaults to all)', list, [])
@@ -36,6 +41,10 @@ function list(val) {
 
 function runBuild(options) {
   restfuljs.buildApp(options);
+}
+
+function runAdd(model) {
+  restfuljs.addResource([model]);
 }
 
 function runBootstrap(options) {
