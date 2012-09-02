@@ -10,6 +10,13 @@
 
   `restfuljs app -d myTestApi -w 'users, projects'`
 
+### Add resource to existing app
+
+  `restfuljs add profiles`
+
+### Bootstrap data
+
+You can easily bootstrap data into the application by running `node app --bootstrap` from the application directory. This will clear the database and load data from a `json` file in the `data` directory for each of the resources.
 
 ## Response
 

@@ -22,12 +22,6 @@ program
   .description('add a resource to an already created restfuljs app')
   .action(runAdd);
 
-program
-  .command('bootstrap')
-  .description('bootstrap database with data from /bootstrap directory')
-  .option('-m, --models [items]', 'the objects to bootstrap data for (defaults to all)', list, [])
-  .action(runBootstrap);
-
 
 if (process.argv.length < 3) {
   runHelp();
